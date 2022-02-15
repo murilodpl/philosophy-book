@@ -4,12 +4,7 @@
 
 > Just a site turned to philosophy.
 
-<p align="center">
- <a href="#-adjustments-and-improvements">Adjustments and improvements</a> •
- <a href="#-installing-philosophy-book">Installing Philosophy Book</a> • 
- <a href="#-technologies">Technologies</a> • 
- <a href="#-author">Author</a> • 
-</p>
+[//]: <> (<p align="center">  <a href="#-adjustments-and-improvements">Adjustments and improvements</a> •  <a href="#-installing-philosophy-book">Installing Philosophy Book</a> •  <a href="#-technologies">Technologies</a> •  <a href="#-author">Author</a> • </p> )
 
 ### Adjustments and improvements
 
