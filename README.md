@@ -10,8 +10,10 @@
 
 The project is still under development and the next updates will focus on the following tasks:
 
-- [ ] Make a design
-- [ ] Connect API "https://philosophyapi.herokuapp.com/"
+- [X] Make a design
+- [X] Connect API "https://philosophyapi.herokuapp.com/"
+- [ ] Import react router and use it
+- [ ] Create pages and router
 
 ---
 
