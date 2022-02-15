@@ -6,12 +6,14 @@
 
 [//]: <> (<p align="center">  <a href="#-adjustments-and-improvements">Adjustments and improvements</a> •  <a href="#-installing-philosophy-book">Installing Philosophy Book</a> •  <a href="#-technologies">Technologies</a> •  <a href="#-author">Author</a> • </p> )
 
-### Adjustments and improvements
+## 🚧 Adjustments and improvements
 
 The project is still under development and the next updates will focus on the following tasks:
 
 - [ ] Make a design
 - [ ] Connect API "https://philosophyapi.herokuapp.com/"
+
+---
 
 ## 🚀 Installing Philosophy Book
 
@@ -29,11 +31,15 @@ npm install
 npm run dev
 ```
 
+---
+
 ## 🛠 Technologies
 
 #### **Website**  ([React](https://reactjs.org/))
 
 -   **[Philosophy API](https://philosophyapi.herokuapp.com/)**
+
+---
 
 ## 🦸‍♂️ Author
 
@@ -50,5 +56,6 @@ npm run dev
   </tr>
 </table>
 
+---
 
-[⬆ Voltar ao topo](#philosophy-book)<br>
+[🔝 Voltar ao topo](#react-philosophy-book)<br>
