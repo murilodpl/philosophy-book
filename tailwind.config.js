@@ -31,6 +31,7 @@ module.exports = {
         "secondary" : "#8C7765",
         "tertiary" : "#A69C94",
         "cgray": "#F2EDE4",
+        "bloodRed": "#880808",
       },
     },
   },
