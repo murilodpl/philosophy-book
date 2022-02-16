@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import Loading from "../components/Loading"
 
 export default function Philosopher() {
     // Variables
@@ -61,6 +62,6 @@ export default function Philosopher() {
                 </div>}
             </section>
             :
-            <div className="text-center my-8"><h2>Loading</h2></div>
+            <Loading />
     )
 }
