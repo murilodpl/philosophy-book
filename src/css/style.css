@@ -6,6 +6,23 @@ body {
   @apply bg-cgray;
 }
 
-.App {
-  @apply container;
+/* Navbar */
+header {
+  @apply shadow-md;
+}
+
+header .navDiv {
+  @apply container flex items-center py-8;
+}
+
+header .navDiv h1 {
+  @apply text-xl font-bold mr-auto text-primary;
+}
+
+header .navDiv nav .navItem {
+  @apply text-primary ml-4 border-b border-transparent hover:border-primary hover:transition-all;
+}
+
+header .navDiv nav .active {
+  @apply font-bold hover:border-transparent;
 }
