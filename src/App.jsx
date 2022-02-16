@@ -1,38 +1,21 @@
-import { useEffect, useState } from "react"
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar"
-import Philosopher from "./components/Philosopher"
+
+// Pages
+import Home from "./pages/Home"
+import Philosopher from "./pages/Philosopher"
 
 export default function App() {
-  // Variables
-  const [philosophers, setPhilosophers] = useState({})
-
-  // API Resquests
-  useEffect(() => {
-    const philosopherId = Math.ceil(Math.random() * 12) // The api has 12 philosophers
-    fetch(`https://philosophyapi.herokuapp.com/api/philosophers/${philosopherId}`)
-      .then(res => res.json())
-      .then(data => {
-        setPhilosophers(data)
-      })
-  }, [])
-
-  // Console logs
-  console.log(philosophers)
-
-  // Functions
-
-
-  // Components population
-
-
   return (
     <div className="App">
-      <Navbar />
+      <BrowserRouter>
+        <Navbar />
 
-      <section>
-        <Philosopher data={philosophers} />
-      </section>{/* Search Section */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/philosopher" element={<Philosopher />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 } 
