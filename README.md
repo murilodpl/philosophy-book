@@ -12,7 +12,7 @@ The project is still under development and the next updates will focus on the fo
 
 - [X] Make a design
 - [X] Connect API "https://philosophyapi.herokuapp.com/"
-- [ ] Import react router and use it
+- [X] Import react router and use it
 - [ ] Create pages and router
 
 ---
@@ -40,6 +40,7 @@ npm run dev
 #### **Website**  ([React](https://reactjs.org/))
 
 -   **[Philosophy API](https://philosophyapi.herokuapp.com/)**
+-   **[React Router](https://github.com/remix-run/react-router/)**
 
 ---
 
