@@ -13,7 +13,10 @@ The project is still under development and the next updates will focus on the fo
 - [X] Make a design
 - [X] Connect API "https://philosophyapi.herokuapp.com/"
 - [X] Import react router and use it
-- [ ] Create pages and router
+- [X] Create pages and router
+- [X] Make the philosophy page
+- [ ] Make the search page
+- [ ] Make a quiz page
 
 ---
 
