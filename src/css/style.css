@@ -27,6 +27,12 @@ header .navDiv nav .active {
   @apply font-bold hover:border-transparent;
 }
 
+/* Classes */
+.btn-bloodRed {
+  @apply border text-bloodRed border-bloodRed transition-all w-10 py-1 mt-4 mx-2 hover:bg-bloodRed hover:border-cgray hover:text-cgray hover:transition-all disabled:opacity-75 disabled:bg-bloodRed disabled:text-cgray disabled:border-cgray;
+}
+
+
 /* Loading */
 .lds-ripple {
   @apply inline-block relative w-[80px] h-[80px];

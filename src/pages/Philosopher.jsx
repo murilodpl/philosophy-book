@@ -4,26 +4,30 @@ import Loading from "../components/Loading"
 export default function Philosopher() {
     // Variables
     const [philosophers, setPhilosophers] = useState({})
-    const [reset, setReset] = useState(false)
+    const [philosopherId, setPhilosopherId] = useState(1) // The api has 12 philosophers
 
     // API Resquests
     useEffect(() => {
-        const philosopherId = Math.ceil(Math.random() * 12) // The api has 12 philosophers
         fetch(`https://philosophyapi.herokuapp.com/api/philosophers/${philosopherId}`)
             .then(res => res.json())
             .then(data => {
                 setPhilosophers(data)
             })
-    }, [reset])
+    }, [philosopherId])
+
+    // Functions
+    function philosopherIdUp() {
+        setPhilosophers({})
+        setPhilosopherId(prevId => prevId + 1)
+    }
+    
+    function philosopherIdDown() {
+        setPhilosophers({})
+        setPhilosopherId(prevId => prevId - 1)
+    }
 
     // Console logs
     // console.log(philosophers)
-
-    // Functions
-    function resetPhilosopher() {
-        setPhilosophers({})
-        setReset(prevReset => !prevReset)
-    }
 
     // Components population
     const loading = Object.keys(philosophers).length > 0
@@ -35,7 +39,8 @@ export default function Philosopher() {
                 <div className="pb-4 md:grid md:grid-cols-2">
                     <div className="mb-4 text-center">
                         <img className="mx-auto self-center rounded-xl max-h-[350px]" src={philosophers.photo} alt={philosophers.name} />
-                        <button className="border text-bloodRed border-bloodRed transition-all px-4 py-1 mt-4 hover:bg-bloodRed hover:border-cgray hover:text-cgray hover:transition-all" onClick={resetPhilosopher}>Reset Philosopher</button>
+                        <button disabled={philosopherId == 1 && true} onClick={philosopherIdDown} className="btn-bloodRed">-</button>
+                        <button disabled={philosopherId == 12 && true} onClick={philosopherIdUp} className="btn-bloodRed">+</button>
                     </div>
 
                     <div className="text-secondary self-center">
