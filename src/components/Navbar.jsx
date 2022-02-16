@@ -1,7 +1,16 @@
+import { NavLink } from "react-router-dom";
+
 export default function Navbar() {
     return (
         <header>
-            <h1 className="text-xl font-bold mt-4">Philosophy Book</h1>
+            <div className="navDiv">
+                <h1>Philosophy Book</h1>
+
+                <nav>
+                    <NavLink to="/" className="navItem" >Home</NavLink>
+                    <NavLink to="philosopher" className="navItem" >Philosopher</NavLink>
+                </nav>
+            </div>
         </header>
     )
 }
