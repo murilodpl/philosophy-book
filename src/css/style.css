@@ -32,6 +32,10 @@ header .navDiv nav .active {
   @apply border text-bloodRed border-bloodRed transition-all w-10 py-1 mt-4 mx-2 hover:bg-bloodRed hover:border-cgray hover:text-cgray hover:transition-all disabled:opacity-75 disabled:bg-bloodRed disabled:text-cgray disabled:border-cgray;
 }
 
+/* Input */
+input {
+  @apply border-primary text-primary bg-[#f7f4ed] focus:ring-primary !important;
+}
 
 /* Loading */
 .lds-ripple {
