@@ -26,3 +26,23 @@ header .navDiv nav .navItem {
 header .navDiv nav .active {
   @apply font-bold hover:border-transparent;
 }
+
+/* Loading */
+.lds-ripple {
+  @apply inline-block relative w-[80px] h-[80px];
+}
+.lds-ripple div {
+  @apply absolute border-4 border-bloodRed opacity-100 rounded-[50%];
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    @apply top-[36px] left-[36px] w-0 h-0 opacity-100;
+  }
+  100% {
+    @apply top-[0] left-[0] w-[72px] h-[72px] opacity-0;
+  }
+}
