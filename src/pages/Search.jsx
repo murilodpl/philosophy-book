@@ -3,29 +3,50 @@ import SearchContent from "../components/SearchContent"
 
 export default function Search() {
     // Variables
-    const [search, setSearch] = useState("")
+    const [search, setSearch] = useState("life")
     const [dataSearch, setDataSearch] = useState({
         count: 0,
-        urlApi: null,
         results: []
     })
 
     // API Resquests
     useEffect(() => {
-        fetch(`http://philosophyapi.herokuapp.com/api/ideas/?search=${search}`)
-            .then(res => res.json())
-            .then(data => setDataSearch((prevData) => ({
-                count: search != "" ? data.count : 0,
-                urlApi: data.next,
-                results: search != "" ? [
-                    ...data.results
-                ] : []
-            })))
+        let isTyping = false;
 
-        return () => {
-            setDataSearch(prevData => ({ ...prevData, urlApi: null }))
+        const fetchMetaData = async () => {
+            setDataSearch({
+                count: 0,
+                results: []
+            })
+            let allData = [];
+            let count;
+            let morePagesAvailable = true;
+            let currentPage = 0;
+
+            while (morePagesAvailable) {
+                currentPage++;
+                const response = await fetch(`http://philosophyapi.herokuapp.com/api/ideas/?search=${search}&page=${currentPage}`)
+                let data = await response.json();
+                count = data.count
+                data.results.forEach(e => allData.unshift(e));
+                morePagesAvailable = data.next !== null;
+            }
+
+            if (!isTyping) {
+                setDataSearch(prevData => ({
+                    count: count,
+                    results: [...allData]
+                }));
+            }
         }
+
+        fetchMetaData()
+            .catch(console.error);
+
+        // Callback function
+        return () => isTyping = true;
     }, [search])
+
 
     // Functions
     function handleChange(e) {
@@ -44,6 +65,7 @@ export default function Search() {
             </div>
 
             <SearchContent data={dataSearch} />
+            {/* Do a loading */}
         </section>
     )
 }
