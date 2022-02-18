@@ -29,7 +29,7 @@ header .navDiv nav .active {
 
 /* Classes */
 .btn-bloodRed {
-  @apply border text-bloodRed border-bloodRed transition-all w-10 py-1 mt-4 mx-2 hover:bg-bloodRed hover:border-cgray hover:text-cgray hover:transition-all disabled:opacity-75 disabled:bg-bloodRed disabled:text-cgray disabled:border-cgray;
+  @apply border text-bloodRed border-bloodRed transition-all py-1 mt-4 hover:bg-bloodRed hover:border-cgray hover:text-cgray hover:transition-all disabled:opacity-75 disabled:bg-bloodRed disabled:text-cgray disabled:border-cgray;
 }
 
 /* Input */
