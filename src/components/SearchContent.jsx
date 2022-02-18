@@ -12,8 +12,13 @@ export default function SearchContent(props) {
         <div>
             <div className="text-secondary text-sm">
                 <fieldset className="border border-solid border-gray-300 p-3">
-                    <legend className="font-bold text-base">{(props.data.count > 0) ? `Search result: (${props.data.count})` : "No result"}</legend>
+                    <legend className="font-bold text-base">
+                        {
+                            (props.loading) ? "Searching..." : (props.data.count > 0) ? `Search result: (${props.data.count})` : "No result"
+                        }
+                    </legend>
 
+                    {props.loading && <Loading />}
                     {
                         (searchElements.length > 0) &&
                         searchElements
