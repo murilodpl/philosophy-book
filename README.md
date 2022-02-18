@@ -16,7 +16,8 @@ The project is still under development and the next updates will focus on the fo
 - [X] Create pages and router
 - [X] Make the philosophy page
 - [X] Make the search page
-- [ ] Make a quiz page
+- [ ] Make the home page
+- [ ] Make the quiz page
 - [ ] Responsive header
 
 ---
