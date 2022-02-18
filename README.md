@@ -15,8 +15,9 @@ The project is still under development and the next updates will focus on the fo
 - [X] Import react router and use it
 - [X] Create pages and router
 - [X] Make the philosophy page
-- [ ] Make the search page
+- [X] Make the search page
 - [ ] Make a quiz page
+- [ ] Responsive header
 
 ---
 
