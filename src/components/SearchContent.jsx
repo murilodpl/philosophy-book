@@ -14,14 +14,20 @@ export default function SearchContent(props) {
                 <fieldset className="border border-solid border-gray-300 p-3">
                     <legend className="font-bold text-base">
                         {
-                            (props.loading) ? "Searching..." : (props.data.count > 0) ? `Search result: (${props.data.count})` : "No result"
+                            (props.data.count > 0) ? `Search result: (${props.data.count})` : "No result"
                         }
                     </legend>
-
-                    {props.loading && <Loading />}
+                    
                     {
                         (searchElements.length > 0) &&
-                        searchElements
+                        <div>
+                            {searchElements}
+                            <div className='flex justify-between items-center mb-4'>
+                                <button disabled={props.data.previous === null} onClick={props.previousPage} className='btn-bloodRed px-2'>Previous Page</button>
+                                <span className='font-bold text-sm'>{`Page: ${props.currentPage} / ${Math.ceil(props.data.count / 15)}`}</span>
+                                <button disabled={props.data.next === null} onClick={props.nextPage} className='btn-bloodRed px-2'>Next Page</button>
+                            </div>
+                        </div>
                     }
                 </fieldset>
             </div>
