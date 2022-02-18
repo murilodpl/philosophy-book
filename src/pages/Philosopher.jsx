@@ -39,8 +39,8 @@ export default function Philosopher() {
                 <div className="pb-4 md:grid md:grid-cols-2">
                     <div className="mb-4 text-center">
                         <img className="mx-auto self-center rounded-xl max-h-[350px]" src={philosophers.photo} alt={philosophers.name} />
-                        <button disabled={philosopherId == 1 && true} onClick={philosopherIdDown} className="btn-bloodRed">-</button>
-                        <button disabled={philosopherId == 12 && true} onClick={philosopherIdUp} className="btn-bloodRed">+</button>
+                        <button disabled={philosopherId == 1 && true} onClick={philosopherIdDown} className="btn-bloodRed w-10 mx-2">-</button>
+                        <button disabled={philosopherId == 12 && true} onClick={philosopherIdUp} className="btn-bloodRed w-10 mx-2">+</button>
                     </div>
 
                     <div className="text-secondary self-center">
