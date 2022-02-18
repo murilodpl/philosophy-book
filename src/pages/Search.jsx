@@ -4,7 +4,7 @@ import SearchContent from "../components/SearchContent"
 export default function Search() {
     // Variables
     const [search, setSearch] = useState("")
-    const [loading, setLoading] = useState(false)
+    const [currentPage, setCurrentPage] = useState(1)
     const [dataSearch, setDataSearch] = useState({
         count: 0,
         results: []
@@ -12,50 +12,35 @@ export default function Search() {
 
     // API Resquests
     useEffect(() => {
-        setLoading(true)
-        let isTyping = false;
+        setDataSearch({
+            count: 0,
+            results: []
+        })
 
-        const fetchMetaData = async () => {
-            if (search != "") {
-                setDataSearch({
-                    count: 0,
-                    results: []
-                })
-                let allData = []
-                let count
-                let morePagesAvailable = true
-                let currentPage = 0
-
-                while (morePagesAvailable) {
-                    currentPage++
-                    const response = await fetch(`http://philosophyapi.herokuapp.com/api/ideas/?search=${search}&page=${currentPage}`)
-                    let data = await response.json()
-                    count = data.count
-                    data.results.forEach(e => allData.unshift(e))
-                    morePagesAvailable = data.next !== null
-                }
-
-                if (!isTyping) {
-                    setDataSearch(prevData => ({
-                        count: count,
-                        results: [...allData]
-                    }))
-                    setLoading(false);
-                }
-            }
-        }
-
-        fetchMetaData()
-            .catch(console.error)
-
-        // Callback function
-        return () => { isTyping = true; setLoading(false); }
-    }, [search])
+        fetch(`http://philosophyapi.herokuapp.com/api/ideas/?search=${search}&page=${currentPage}`)
+            .then(res => res.json())
+            .then(data => setDataSearch((prevData) => ({
+                count: search != "" ? data.count : 0,
+                previous: data.previous,
+                next: data.next,
+                results: search != "" ? [
+                    ...data.results
+                ] : []
+            })))
+    }, [search, currentPage])
 
     // Functions
     function handleChange(e) {
         const { value } = e.target
+        setCurrentPage(1)
         setSearch(value)
+    }
+
+    function nextPage() {
+        setCurrentPage(prevCP => prevCP + 1)
+    }
+    function previousPage() {
+        setCurrentPage(prevCP => prevCP - 1)
     }
 
     // Console logs
@@ -68,7 +53,7 @@ export default function Search() {
                 <input className="w-full" type="text" id="searchWhat" onChange={handleChange} value={search} name="searchWhat" />
             </div>
 
-            <SearchContent data={dataSearch} loading={search != "" ? loading : false} />
+            <SearchContent data={dataSearch} currentPage={currentPage} nextPage={nextPage} previousPage={previousPage} />
         </section>
     )
 }
