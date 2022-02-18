@@ -17,7 +17,7 @@ export default function Search() {
             results: []
         })
 
-        fetch(`http://philosophyapi.herokuapp.com/api/ideas/?search=${search}&page=${currentPage}`)
+        fetch(`https://philosophyapi.herokuapp.com/api/ideas/?search=${search}&page=${currentPage}`)
             .then(res => res.json())
             .then(data => setDataSearch((prevData) => ({
                 count: search != "" ? data.count : 0,
