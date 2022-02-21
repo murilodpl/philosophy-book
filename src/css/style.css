@@ -37,6 +37,81 @@ input {
   @apply border-primary text-primary bg-[#f7f4ed] focus:ring-primary !important;
 }
 
+/* Quiz */
+/* Questions Screen */
+.questionDiv {
+  @apply border-b border-[#dbdef0] py-6;
+}
+
+.questionDiv h2 {
+  @apply text-xl mx-0 mt-0 mb-6;
+}
+
+@media only screen and (min-width: 1000px) {
+  .questionDiv .questionSelect {
+    @apply flex justify-center;
+  }
+
+  .questionDiv .questionSelect label {
+    @apply my-0 ml-0 mr-6 !important;
+  }
+}
+
+.questionDiv .questionSelect label {
+  @apply font-medium block text-sm my-4 mx-0 cursor-pointer rounded-xl py-2 px-5 bg-[#f1ece2] border border-primary;
+}
+
+.questionDiv .questionSelect input:checked + label {
+  @apply bg-[#d6dbf5] border-transparent;
+}
+
+.questionDiv .questionSelect .correctAnswer input + label {
+  @apply bg-[#94d7a2] border-transparent;
+}
+
+.questionDiv .questionSelect span:not(.correctAnswer) input:disabled + label {
+  @apply opacity-50;
+}
+
+.questionDiv .questionSelect.playAgain span:not(.correctAnswer) input:checked + label {
+  @apply bg-[#f8bcbc];
+}
+
+.questionDiv .questionSelect [type="radio"]:checked,
+.questionDiv .questionSelect [type="radio"]:not(:checked) {
+  @apply absolute left-[-9999px] w-0 h-0 invisible;
+}
+
+.playAgainBtnDiv .score {
+  @apply block text-lg font-bold mb-4;
+}
+
+@media only screen and (min-width: 1000px) {
+  .playAgainBtnDiv .score {
+    @apply inline my-0 mr-8 ml-0 !important;
+  }
+}
+
+/* Buttons */
+.btn-quiz {
+  @apply text-cgray text-base font-medium rounded-2xl py-4 px-8 border border-transparent bg-bloodRed cursor-pointer transition-all hover:text-bloodRed hover:border-bloodRed hover:bg-cgray hover:transition-all;
+}
+
+.checkAnswers,
+.playAgainBtnDiv {
+  @apply mt-8 text-center;
+}
+
+@media only screen and (min-width: 1000px) {
+  .btn-start {
+    @apply mx-4;
+  }
+
+  .hiddenBr {
+    @apply hidden;
+  }
+}
+
 /* Loading */
 .lds-ripple {
   @apply inline-block relative w-[80px] h-[80px];
