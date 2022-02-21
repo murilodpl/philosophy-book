@@ -355,7 +355,7 @@
         correct_answer: "Rationalism"
     },
     {
-        id: 38,
+        id: 34,
         question: "Berkeley argues that all knowledge is derived from",
         answers: [
             "Impression",
@@ -366,7 +366,7 @@
         correct_answer: "Ideas"
     },
     {
-        id: 39,
+        id: 35,
         question: "———— helps in getting correct knowledge through anumana",
         answers: [
             "Vyapti",
@@ -377,7 +377,7 @@
         correct_answer: "Vyapti"
     },
     {
-        id: 40,
+        id: 36,
         question: "The words of a trustworthy person is known as",
         answers: [
             "Satya",
@@ -388,7 +388,7 @@
         correct_answer: "Aptavakya"
     },
     {
-        id: 43,
+        id: 37,
         question: "A theory is a conclusion, where as a method is a",
         answers: [
             "Style",
@@ -399,7 +399,7 @@
         correct_answer: "Procedure"
     },
     {
-        id: 44,
+        id: 38,
         question: "Philosophy is the root and science is the",
         answers: [
             "Fruit",
@@ -411,7 +411,7 @@
     },
 
     {
-        id: 45,
+        id: 39,
         question: "Who said ? Philosophy is the Science of sciences",
         answers: [
             "Plato",
@@ -422,7 +422,7 @@
         correct_answer: "August's Comte"
     },
     {
-        id: 46,
+        id: 40,
         question: "———— said “whatever is. Clearly and distinctly perceived is true”",
         answers: [
             "Locke",
@@ -433,7 +433,7 @@
         correct_answer: "Descartes"
     },
     {
-        id: 47,
+        id: 41,
         question: "According to Skepticism knowledge is ———",
         answers: [
             "Certain",
@@ -442,5 +442,390 @@
             "None of these",
         ],
         correct_answer: "Uncertain"
+    },
+    {
+        id: 42,
+        question: "The two Heterodox schools in Indian Philosophy are:",
+        answers: [
+            'Nyaya and Vaisesika',
+            'Buddhism and Jainism',
+            'Sankhya and Yoga',
+            'Purva and Uttaramimamsa',
+        ],
+        correct_answer: "Buddhism and Jainism"
+    },
+    {
+        id: 43,
+        question: "The father of philosophy:",
+        answers: [
+            'Descartes',
+            'Thales',
+            'Aristotle',
+            'Francis Bacon',
+        ],
+        correct_answer: "Thales"
+    },
+    {
+        id: 44,
+        question: "A Treatise of Human Nature is the work of:",
+        answers: [
+            'Karl Popper',
+            'John Dewey',
+            'Bertrand Russell',
+            'David Hume',
+        ],
+        correct_answer: "John Dewey"
+    },
+    {
+        id: 45,
+        question: "The most original contribution of Americans thought at the end of nineteenth century:",
+        answers: [
+            'Pragmatism',
+            'Positivism',
+            'Empiricism',
+            'Rationalism',
+        ],
+        correct_answer: "Pragmatism"
+    },
+    {
+        id: 46,
+        question: "Who is a philosopher, in the original sense of the word?",
+        answers: [
+            'A person primarily interested in the truth about moral matters.',
+            'Someone who studies the stars and planets.',
+            'A clever and tricky argues.',
+            'A lover and pursuer of wisdom, regardless of the subject matter.',
+        ],
+        correct_answer: "A lover and pursuer of wisdom, regardless of the subject matter."
+    },
+    {
+        id: 47,
+        question: "The three main divisions of Philosophy are metaphysics, epistemology, and ———",
+        answers: [
+            'Axiology',
+            'Sociology',
+            'Anthropology',
+            'Cosmology',
+        ],
+        correct_answer: "Axiology"
+    },
+    {
+        id: 48,
+        question: "Descartes was a ———thinker",
+        answers: [
+            'Emperical',
+            'Rational',
+            'Materialistic',
+            'Idealistic',
+        ],
+        correct_answer: "Rational"
+    },
+    {
+        id: 49,
+        question: "Which American mathematician philosopher laid the foundation of Pragmatism",
+        answers: [
+            'William James',
+            'J. Dewey',
+            'C.S Pierce',
+            'Spinoza',
+        ],
+        correct_answer: "C.S Pierce"
+    },
+    {
+        id: 50,
+        question: "The Problem of Knowledge was written by ———",
+        answers: [
+            'Aristotle',
+            'Plato',
+            'A.J Ayer',
+            'Collingwood',
+        ],
+        correct_answer: "A.J Ayer"
+    },
+    {
+        id: 51,
+        question: "Spinoza's method is known as———",
+        answers: [
+            'Axiomatic',
+            'Theoretical',
+            'Geometrical',
+            'Doubt',
+        ],
+        correct_answer: "Axiomatic"
+    },
+    {
+        id: 52,
+        question: "Who said? “God is dead”",
+        answers: [
+            'Schopenhauer',
+            'Popper',
+            'Sartre',
+            'Nietzsche',
+        ],
+        correct_answer: "Nietzsche"
+    },
+    {
+        id: 53,
+        question: "Who is the father of existentialism?",
+        answers: [
+            'Soren Kierkegaard',
+            'Camus',
+            'Sartre',
+            'Heidegger',
+        ],
+        correct_answer: "Soren Kierkegaard"
+    },
+    {
+        id: 54,
+        question: "——— Introduced the term Aesthetics",
+        answers: [
+            'Kant',
+            'Hegel',
+            'Baumgarten',
+            'Aristotle',
+        ],
+        correct_answer: "Aristotle"
+    },
+    {
+        id: 55,
+        question: "Socratic method is",
+        answers: [
+            'Skeptical',
+            'Conceptual',
+            'Conversational',
+            'All of these',
+        ],
+        correct_answer: "All of these"
+    },
+    {
+        id: 56,
+        question: "The Skepticism of Descartes is known as ———",
+        answers: [
+            'Pure Skepticism',
+            'Phenomenal Skepticism',
+            'Methodological Skepticism',
+            'None of these',
+        ],
+        correct_answer: "Methodological Skepticism"
+    },
+    {
+        id: 57,
+        question: "Who said 'Accept nothing as true which we do not perceive clearly and distinctly'",
+        answers: [
+            'Descartes',
+            'Spinoza',
+            'Leibniz ',
+            'Kant',
+        ],
+        correct_answer: "Descartes"
+    },
+    {
+        id: 58,
+        question: "——— explained the world with the theory of Monads",
+        answers: [
+            'Democritus',
+            'St. Anselm',
+            'Leibniz',
+            'William James',
+        ],
+        correct_answer: "Leibniz"
+    },
+    {
+        id: 59,
+        question: "——— is said to be the origin of Philosophy",
+        answers: [
+            'Greed',
+            'Wonder',
+            'Fear',
+            'None of these',
+        ],
+        correct_answer: "Wonder"
+    },
+    {
+        id: 60,
+        question: "The mind body relationship theory of Descartes is known as———",
+        answers: [
+            'Psycho physical parallelism',
+            'Interactionism',
+            'Pre established harmony',
+            'None of these',
+        ],
+        correct_answer: "Interactionism"
+    },
+    {
+        id: 61,
+        question: "Wittgenstein says that language is a",
+        answers: [
+            'Statement',
+            'Picture of reality',
+            'Judgement',
+            'Concept',
+        ],
+        correct_answer: "Picture of reality"
+    },
+    {
+        id: 62,
+        question: "———— rejected Metaphysics as meaningless",
+        answers: [
+            'Logical positivists',
+            'Rationalists',
+            'Idealists',
+            'Spiritualists',
+        ],
+        correct_answer: "Logical positivists"
+    },
+    {
+        id: 63,
+        question: "——— is known as queen Science",
+        answers: [
+            'Mathematics',
+            'Physics',
+            'Philosophy',
+            'Psychology',
+        ],
+        correct_answer: "Philosophy"
+    },
+    {
+        id: 64,
+        question: "Dialectical materialism is the theory of———",
+        answers: [
+            'Hegel',
+            'Marx',
+            'Nietzsche',
+            'Schopenhauer',
+        ],
+        correct_answer: "Marx"
+    },
+    {
+        id: 65,
+        question: "——— is the father of Spiritualistic pluralism",
+        answers: [
+            'Locke',
+            'Dewey',
+            'Leibniz',
+            'W. James',
+        ],
+        correct_answer: "Leibniz"
+    },
+    {
+        id: 66,
+        question: "The author of Passions of the Soul is",
+        answers: [
+            'Spinoza',
+            'A.J Ayer',
+            'Aristotle',
+            'Plato',
+        ],
+        correct_answer: "Plato"
+    },
+    {
+        id: 67,
+        question: "——— said 'Philosophy is the science of knowledge'.",
+        answers: [
+            'Schelling',
+            'Fitche',
+            'Marx',
+            'Bruno',
+        ],
+        correct_answer: "Fitche"
+    },
+    {
+        id: 68,
+        question: "Transcendental aesthetic deals with the theory of",
+        answers: [
+            'Understanding',
+            'Sensations',
+            'Aesthetic Judgement',
+            'Moral Judgement',
+        ],
+        correct_answer: "Sensations"
+    },
+    {
+        id: 69,
+        question: "It is the art of ——— which brings other men's ideas to birth",
+        answers: [
+            'Deception',
+            'Oratory',
+            'Intellectual midwifery',
+            'All of these',
+        ],
+        correct_answer: "Intellectual midwifery"
+    },
+    {
+        id: 70,
+        question: "The 18th century German thinker who initiated dramatic changes in the field of Aesthetics is ———",
+        answers: [
+            'Leibniz',
+            'Kant',
+            'Nietzsche',
+            'Schelling',
+        ],
+        correct_answer: "Kant"
+    },
+    {
+        id: 71,
+        question: "William James studied which aspect of religion?",
+        answers: [
+            "Religious experience",
+            "Religious symbolism",
+            "Religious myths",
+            "Religious rituals",
+        ],
+        correct_answer: "Religious experience"
+    },
+    {
+        id: 72,
+        question: "Which of these best describes the noetic quality?",
+        answers: [
+            "Love",
+            "Time",
+            "Knowledge",
+            "Emotion",
+        ],
+        correct_answer: "Knowledge"
+    },
+    {
+        id: 73,
+        question: "Which of these is a way to study and write about religion that is considered a religious endeavour?",
+        answers: [
+            "Theology",
+            "Moral philosophy",
+            "Religious studies",
+            "Biblical criticism",
+        ],
+        correct_answer: "Theology"
+    },
+    {
+        id: 74,
+        question: "Which of these is not one of these seven dimensions of religion?",
+        answers: [
+            "The practical dimensions",
+            "The emotional dimensions",
+            "The divine dimensions",
+            "The mythic dimensions",
+        ],
+        correct_answer: "The divine dimensions"
+    },
+    {
+        id: 75,
+        question: "Which of these religious traditions teaches the supreme importance of harmony in the family, community and state?",
+        answers: [
+            "Confucianism",
+            "Judaism",
+            "Hinduism",
+            "Christianity",
+        ],
+        correct_answer: "Confucianism"
+    },
+    {
+        id: 76,
+        question: "Which is not attributed of god?",
+        answers: [
+            "Omnipotent",
+            "Omnicent",
+            "Omnipresent",
+            "Natural",
+        ],
+        correct_answer: "Natural"
     }
 ]
