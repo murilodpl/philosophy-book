@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import dataQuestion from '../questions.js'
 
+import AnimatedPage from "../components/AnimatedPage"
 import Question from "../components/Question"
 import LiteratureSlider from "../components/LiteratureSlider"
 import Confetti from 'react-confetti'
@@ -73,27 +74,28 @@ export default function Home() {
     }
 
     const questionsElement = questions.map(question => ([<Question key={question.id} data={question} handleChange={selectAnswer} playAgain={playAgain} />]))
-   
 
     return (
-        <div className="container text-center my-8">
-            {questionsElement.length != 0 ? questionsElement : <div className="lds-ripple"><div></div><div></div></div>}
+        <AnimatedPage>
+            <div className="container text-center my-8">
+                {questionsElement.length != 0 ? questionsElement : <div className="lds-ripple"><div></div><div></div></div>}
 
-            {
-                !playAgain
-                    ?
-                    <div className="checkAnswers">
-                        {questionsElement.length != 0 && <button className="btn-quiz" onClick={checkAnswers}>Check Answers</button>}
-                    </div>
-                    :
-                    <div className="playAgainBtnDiv">
-                        {correctCount > 3 && <Confetti />}
-                        <span className="score">You scored <span style={correctStyle}>{correctCount}/5</span> correct answers</span>
-                        <button className="btn-quiz" onClick={handlePlayAgain}>Play again</button> <br className="hiddenBr" />
-                    </div>
-            }
+                {
+                    !playAgain
+                        ?
+                        <div className="checkAnswers">
+                            {questionsElement.length != 0 && <button className="btn-quiz" onClick={checkAnswers}>Check Answers</button>}
+                        </div>
+                        :
+                        <div className="playAgainBtnDiv">
+                            {correctCount > 3 && <Confetti />}
+                            <span className="score">You scored <span style={correctStyle}>{correctCount}/5</span> correct answers</span>
+                            <button className="btn-quiz" onClick={handlePlayAgain}>Play again</button> <br className="hiddenBr" />
+                        </div>
+                }
 
-            <LiteratureSlider />
-        </div>
+                <LiteratureSlider />
+            </div>
+        </AnimatedPage>
     )
 }

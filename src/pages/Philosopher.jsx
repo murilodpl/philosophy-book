@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import AnimatedPage from "../components/AnimatedPage"
 import Loading from "../components/Loading"
 
 export default function Philosopher() {
@@ -20,7 +21,7 @@ export default function Philosopher() {
         setPhilosophers({})
         setPhilosopherId(prevId => prevId + 1)
     }
-    
+
     function philosopherIdDown() {
         setPhilosophers({})
         setPhilosopherId(prevId => prevId - 1)
@@ -34,7 +35,8 @@ export default function Philosopher() {
     const ideas = (philosophers.ideas) ? philosophers.ideas.map((idea, index) => <p key={index} className={`${(philosophers.ideas.length - 1) == index ? "" : "border-b border-gray-300 mb-2 pb-2 "}`}><q>{idea}</q></p>) : ""
 
     return (
-        loading ?
+        <AnimatedPage>
+            {loading ?
             <section className="container my-8">
                 <div className="pb-4 md:grid md:grid-cols-2">
                     <div className="mb-4 text-center">
@@ -67,6 +69,7 @@ export default function Philosopher() {
                 </div>}
             </section>
             :
-            <Loading />
+            <Loading />}
+        </AnimatedPage>
     )
 }

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import AnimatedPage from "../components/AnimatedPage"
 import SearchContent from "../components/SearchContent"
 
 export default function Search() {
@@ -47,13 +48,15 @@ export default function Search() {
     console.log(dataSearch)
 
     return (
-        <section className="container my-8">
-            <div className="mb-8">
-                <label className="text-primary font-bold mb-2 block" htmlFor="searchWhat">Search for something:</label>
-                <input className="w-full" type="text" id="searchWhat" onChange={handleChange} value={search} name="searchWhat" />
-            </div>
+        <AnimatedPage>
+            <section className="container my-8">
+                <div className="mb-8">
+                    <label className="text-primary font-bold mb-2 block" htmlFor="searchWhat">Search for something:</label>
+                    <input className="w-full" type="text" id="searchWhat" onChange={handleChange} value={search} name="searchWhat" />
+                </div>
 
-            <SearchContent data={dataSearch} currentPage={currentPage} nextPage={nextPage} previousPage={previousPage} />
-        </section>
+                <SearchContent data={dataSearch} currentPage={currentPage} nextPage={nextPage} previousPage={previousPage} />
+            </section>
+        </AnimatedPage>
     )
 }
