@@ -18,6 +18,8 @@ The project is still under development and the next updates will focus on the fo
 - [X] Make the search page
 - [ ] Make the home page (slider)
 - [X] Make the quiz page (on home page)
+- [ ] Add animation on router
+- [X] Add animation on search
 - [ ] Responsive header
 - [ ] Footer
 
@@ -50,6 +52,7 @@ npm run dev
 -   **[React Router](https://github.com/remix-run/react-router/)**
 -   **[React Confetti](https://github.com/alampros/react-confetti/)**
 -   **[React Slick](https://github.com/akiran/react-slick/)**
+-   **[Framer Motion](https://github.com/framer/motion/)**
 
 ---
 
