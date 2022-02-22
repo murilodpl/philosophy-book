@@ -1,5 +1,4 @@
 export default [
-    { site: "https://ismailyusufcollege.com/wp-content/uploads/2020/10/Western-Philosophy-MCQS.pdf" },
     {
         id: 1,
         question: "The four main divisions of philosophy are metaphysics, epistemology, axiology, and _____.",
