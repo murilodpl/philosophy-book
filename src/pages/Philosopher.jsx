@@ -1,11 +1,17 @@
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react"
-import AnimatedPage from "../components/AnimatedPage"
 import Loading from "../components/Loading"
 
 export default function Philosopher() {
     // Variables
     const [philosophers, setPhilosophers] = useState({})
     const [philosopherId, setPhilosopherId] = useState(1) // The api has 12 philosophers
+    const [upDownP, setUpDownP] = useState(true);
+    const animations = {
+        initial: { opacity: 0, x: upDownP ? 100 : -100 },
+        animate: { opacity: 1, x: 0 },
+        exit: { opacity: 0, x: upDownP ? -100 : 100 },
+    };
 
     // API Resquests
     useEffect(() => {
@@ -18,11 +24,13 @@ export default function Philosopher() {
 
     // Functions
     function philosopherIdUp() {
+        setUpDownP(true)
         setPhilosophers({})
         setPhilosopherId(prevId => prevId + 1)
     }
 
     function philosopherIdDown() {
+        setUpDownP(false)
         setPhilosophers({})
         setPhilosopherId(prevId => prevId - 1)
     }
@@ -36,7 +44,13 @@ export default function Philosopher() {
 
     return (
         loading ?
-            <AnimatedPage>
+            <motion.div
+                variants={animations}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                transition={{ duration: 0.5 }}
+            >
                 <section className="container my-8">
                     <div className="pb-4 md:grid md:grid-cols-2">
                         <div className="mb-4 text-center">
@@ -68,7 +82,7 @@ export default function Philosopher() {
                         </fieldset>
                     </div>}
                 </section>
-            </AnimatedPage>
+            </motion.div>
             :
             <Loading />
     )
