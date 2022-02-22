@@ -112,6 +112,11 @@ input {
   }
 }
 
+/* Slider */
+.slick-list {
+  @apply pb-8 !important;
+}
+
 /* Loading */
 .lds-ripple {
   @apply inline-block relative w-[80px] h-[80px];
