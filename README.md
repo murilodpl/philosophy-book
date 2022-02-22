@@ -18,8 +18,8 @@ The project is still under development and the next updates will focus on the fo
 - [X] Make the search page
 - [ ] Make the home page (slider)
 - [X] Make the quiz page (on home page)
-- [ ] Add animation on router
-- [X] Add animation on search
+- [X] Add animation on router
+- [ ] Add animation on search
 - [ ] Responsive header
 - [ ] Footer
 
