@@ -16,6 +16,8 @@ export default function LiteratureSlider() {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
+        dots: true,
+        arrows: false,
         responsive: [
             {
                 breakpoint: 1500,
@@ -27,20 +29,18 @@ export default function LiteratureSlider() {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 2,
-                    dots: true,
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    dots: true,
                 }
             }
         ]
     };
     return (
-        <div className="pt-12">
+        <div className="py-12">
             <h2 className="text-primary font-bold text-2xl my-4">Some Literature Topics:</h2>
 
             <Slider {...settings}>
