@@ -46,7 +46,10 @@ npm run dev
 #### **Website**  ([React](https://reactjs.org/))
 
 -   **[Philosophy API](https://philosophyapi.herokuapp.com/)**
+-   **[Tailwindcss](https://tailwindcss.com/)**
 -   **[React Router](https://github.com/remix-run/react-router/)**
+-   **[React Confetti](https://github.com/alampros/react-confetti/)**
+-   **[React Slick](https://github.com/akiran/react-slick/)**
 
 ---
 
