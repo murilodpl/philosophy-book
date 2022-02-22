@@ -16,9 +16,10 @@ The project is still under development and the next updates will focus on the fo
 - [X] Create pages and router
 - [X] Make the philosophy page
 - [X] Make the search page
-- [ ] Make the home page
-- [ ] Make the quiz page
+- [ ] Make the home page (slider)
+- [X] Make the quiz page (on home page)
 - [ ] Responsive header
+- [ ] Footer
 
 ---
 
@@ -45,7 +46,10 @@ npm run dev
 #### **Website**  ([React](https://reactjs.org/))
 
 -   **[Philosophy API](https://philosophyapi.herokuapp.com/)**
+-   **[Tailwindcss](https://tailwindcss.com/)**
 -   **[React Router](https://github.com/remix-run/react-router/)**
+-   **[React Confetti](https://github.com/alampros/react-confetti/)**
+-   **[React Slick](https://github.com/akiran/react-slick/)**
 
 ---
 
