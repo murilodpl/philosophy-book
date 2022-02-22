@@ -16,12 +16,10 @@ The project is still under development and the next updates will focus on the fo
 - [X] Create pages and router
 - [X] Make the philosophy page
 - [X] Make the search page
-- [ ] Make the home page (slider)
+- [X] Make the home page
 - [X] Make the quiz page (on home page)
 - [X] Add animation on router
-- [ ] Add animation on search
 - [ ] Responsive header
-- [ ] Footer
 
 ---
 
