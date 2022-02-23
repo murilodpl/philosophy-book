@@ -22,10 +22,10 @@ export default function SearchContent(props) {
                         (searchElements.length > 0) &&
                         <div>
                             {searchElements}
-                            <div className='flex justify-between items-center mb-4'>
-                                <button disabled={props.data.previous === null} onClick={props.previousPage} className='btn-bloodRed px-2'>Previous Page</button>
-                                <span className='font-bold text-sm'>{`Page: ${props.currentPage} / ${Math.ceil(props.data.count / 15)}`}</span>
-                                <button disabled={props.data.next === null} onClick={props.nextPage} className='btn-bloodRed px-2'>Next Page</button>
+                            <div className='flex justify-between items-center my-4'>
+                                <button disabled={props.data.previous === null} onClick={props.previousPage} className='btn-bloodRed text-xs md:text-sm px-2'>Previous Page</button>
+                                <span className='font-bold text-xs md:text-sm'>{`Page: ${props.currentPage} / ${Math.ceil(props.data.count / 15)}`}</span>
+                                <button disabled={props.data.next === null} onClick={props.nextPage} className='btn-bloodRed text-xs md:text-sm px-2'>Next Page</button>
                             </div>
                         </div>
                     }
