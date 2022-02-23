@@ -19,7 +19,9 @@ The project is still under development and the next updates will focus on the fo
 - [X] Make the home page
 - [X] Make the quiz page (on home page)
 - [X] Add animation on router
-- [ ] Responsive header
+- [X] Responsive header
+- [ ] Resolve API: CORS error
+- [ ] Resolve Quiz: Don't get the same question 
 
 ---
 
