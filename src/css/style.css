@@ -7,29 +7,21 @@ body {
 }
 
 /* Navbar */
-header {
-  @apply shadow-md;
+header nav ul li .navItem {
+  @apply block py-2 pr-4 pl-3 text-base text-primary border-b border-tertiary hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-secondary md:p-0;
 }
 
-header .navDiv {
-  @apply container flex items-center py-8;
+header nav ul li .navItem.active {
+  @apply block py-2 pr-4 pl-3 text-white bg-secondary md:bg-transparent md:text-primary md:p-0 font-bold;
 }
 
-header .navDiv h1 {
-  @apply text-xl font-bold mr-auto text-primary;
-}
-
-header .navDiv nav .navItem {
-  @apply text-primary ml-4 border-b border-transparent hover:border-primary hover:transition-all;
-}
-
-header .navDiv nav .active {
-  @apply font-bold hover:border-transparent;
+header nav .mobile-menu {
+  @apply border border-tertiary rounded;
 }
 
 /* Classes */
 .btn-bloodRed {
-  @apply border text-bloodRed border-bloodRed transition-all py-1 mt-4 hover:bg-bloodRed hover:border-cgray hover:text-cgray hover:transition-all disabled:opacity-75 disabled:bg-bloodRed disabled:text-cgray disabled:border-cgray;
+  @apply border text-bloodRed border-bloodRed transition-all py-1 hover:bg-bloodRed hover:border-cgray hover:text-cgray hover:transition-all disabled:opacity-75 disabled:bg-bloodRed disabled:text-cgray disabled:border-cgray;
 }
 
 /* Input */
