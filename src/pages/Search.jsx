@@ -18,7 +18,7 @@ export default function Search() {
             results: []
         })
 
-        fetch(`https://philosophyapi.herokuapp.com/api/ideas/?search=${search}&page=${currentPage}`)
+        fetch(`/api/ideas/?search=${search}&page=${currentPage}`)
             .then(res => res.json())
             .then(data => setDataSearch((prevData) => ({
                 count: search != "" ? data.count : 0,
@@ -45,7 +45,7 @@ export default function Search() {
     }
 
     // Console logs
-    console.log(dataSearch)
+    // console.log(dataSearch)
 
     return (
         <AnimatedPage>
