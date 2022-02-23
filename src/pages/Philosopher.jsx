@@ -15,7 +15,7 @@ export default function Philosopher() {
 
     // API Resquests
     useEffect(() => {
-        fetch(`https://philosophyapi.herokuapp.com/api/philosophers/${philosopherId}`)
+        fetch(`/api/philosophers/${philosopherId}`)
             .then(res => res.json())
             .then(data => {
                 setPhilosophers(data)
