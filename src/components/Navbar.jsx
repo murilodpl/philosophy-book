@@ -22,7 +22,7 @@ export default function Navbar() {
                     </div>
 
                     <div className="md:hidden flex items-center">
-                        <button className="outline-none menu-button" onClick={menuBtnClick}>
+                        <button className="outline-none menu-button" aria-label="Open mobile menu" onClick={menuBtnClick}>
                             <svg className="w-6 h-6 text-gray-500" x-show="! showMenu" fill="none" viewBox="0 00 24 24" stroke="currentColor">
                                 <path d="m4 6h16M4 12h16M4 18h16"></path>
                             </svg>
