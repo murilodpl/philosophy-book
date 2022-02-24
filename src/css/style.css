@@ -108,6 +108,9 @@ input {
 .slick-list {
   @apply pb-8 !important;
 }
+.slick-slide:not(.slick-active) {
+  @apply hidden invisible;
+} 
 
 /* Loading */
 .lds-ripple {
