@@ -19,20 +19,25 @@ export default function Home() {
     useEffect(() => {
         setQuestions(() => {
             let newArray = []
+            let rNumArray = [] 
 
-            for (let i = 0; i < 5; i++) {
+            while (newArray.length < 5) {
                 let randomNumber = Math.ceil(Math.random() * 76);
 
-                newArray.push({
-                    id: dataQuestion[randomNumber].id,
-                    question: dataQuestion[randomNumber].question,
-                    correct_answer: dataQuestion[randomNumber].correct_answer,
-                    answers: [
-                        ...dataQuestion[randomNumber].answers,
-                    ].sort(() => Math.random() - 0.5),
-                    select_answer: '',
-                    isCorrect: false
-                })
+                if (!rNumArray.includes(randomNumber)) {
+                    rNumArray.push(randomNumber)
+
+                    newArray.push({
+                        id: dataQuestion[randomNumber].id,
+                        question: dataQuestion[randomNumber].question,
+                        correct_answer: dataQuestion[randomNumber].correct_answer,
+                        answers: [
+                            ...dataQuestion[randomNumber].answers,
+                        ].sort(() => Math.random() - 0.5),
+                        select_answer: '',
+                        isCorrect: false
+                    })
+                }
             }
 
             return newArray

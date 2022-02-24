@@ -21,7 +21,7 @@ The project is still under development and the next updates will focus on the fo
 - [X] Add animation on router
 - [X] Responsive header
 - [X] Resolve API: CORS error
-- [ ] Resolve Quiz: Don't get the same question 
+- [X] Resolve Quiz: Don't get the same question 
 
 ---
 
