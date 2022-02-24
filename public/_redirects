@@ -1,3 +1,1 @@
-/api/_ https://philosophyapi.herokuapp.com/api/ 200
-/_ /index.html 200
-/\* /index.html 404
+/api/* https://philosophyapi.herokuapp.com/api/:splat 200
